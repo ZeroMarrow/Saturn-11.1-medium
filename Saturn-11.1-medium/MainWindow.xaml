@@ -1,0 +1,23 @@
+﻿<Window x:Class="Saturn_11._1_medium.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Saturn_11._1_medium"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="351.699" Width="668.932">
+    <Grid Background="#FF535353">
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="5*"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <ListBox x:Name="list" Grid.Row="0" Background="#FF2D324B"/>
+            <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button x:Name="AddTime" Content="Добавить" Margin="5 5 5 5" Click="AddTime_Click" Background="#FF41285F"/>
+                <Button x:Name="HowMuch" Content="Количество секунд" Margin="5 5 5 5" Click="HowMuch_Click" Background="#FF41285F"/>
+                <Button x:Name="Add5Sec" Content="Добавить 5 секунд" Margin="5 5 5 5" Click="Add5Sec_Click" Background="#FF41285F"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>
